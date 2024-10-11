@@ -19,7 +19,9 @@ Using the Fisher exact test, we calculate the p-value to determine if the propor
 The Fisher exact test formula for calculating the p-value is:
 
 \[
+$$
 p = \frac{ \binom{a+c}{a} \binom{b+d}{b} }{ \binom{a+b+c+d}{a+b} }
+$$
 \]
 
 where:
