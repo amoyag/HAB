@@ -20,7 +20,7 @@ The Fisher exact test formula for calculating the p-value is:
 
 
 $$
-p = \frac{ \binom{a+c}{a} \binom{b+d}{b} }{ \binom{a+b+c+d}{a+b} }
+p = \frac{ \binom{a+b}{a} \binom{c+d}{c} }{ \binom{a+b+c+d}{a+c} }
 $$
 
 
