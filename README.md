@@ -4,13 +4,9 @@
 [Gene ID Conversion](https://amoyag.github.io/HAB_24-25/GeneID_Conversion)
 
 
-[Functional Analysis](https://amoyag.github.io/HAB_24-25/funct_anal)
+[Functional Analysis](https://amoyag.github.io/HAB_24-25/functional_analysis)
 
 
-[Functional Analysis with STRING](https://github.com/amoyag/HAB_24-25/blob/main/funct_anal-stringdb.ipynb)
-
-
-
-[Functional Analysis Example](https://github.com/amoyag/HAB_24-25/blob/main/funct_anal_example.ipynb)
+[Functional Analysis Examples](https://github.com/amoyag/HAB_24-25/blob/main/functional_analysis_examples.ipynb)
 
 
