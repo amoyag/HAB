@@ -1,4 +1,4 @@
 # Apuntes de clase
 ## Herramientas y Agoritmos en Bioinformática 
 ### Análisis funcional
-[link](https://amoyag.github.io/GeneID_Conversion)
+[Gene ID Conversion](https://amoyag.github.io/GeneID_Conversion)
