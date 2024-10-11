@@ -1,6 +1,6 @@
 
 # Herramientas y Agoritmos en Bioinformática 24-25
-## Análisis funcional
+## Functional Analysis
 [Gene ID Conversion](https://amoyag.github.io/HAB_24-25/GeneID_Conversion)
 
 
