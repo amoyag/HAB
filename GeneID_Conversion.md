@@ -1,3 +1,8 @@
+---
+layout: default
+title: Gene ID Conversion
+---
+
 ### The Gene ID Conversion Problem
 
 In modern biological research, multiple databases exist for gene information, each with its own nomenclature and identifiers. Genes may be identified by Ensembl IDs, Entrez Gene IDs, HGNC symbols, UniProt IDs, and others. These identifiers are often used in different contexts or tools, making it necessary to convert one identifier type to another. This challenge is known as the **gene ID conversion problem**. Effective conversion is essential for integrating data from different sources, performing downstream analysis, and ensuring data interoperability across bioinformatics tools and platforms.
