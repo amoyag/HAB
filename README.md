@@ -11,5 +11,5 @@
 
 
 
-[Functional Analysis Example](https://github.com/amoyag/HAB_24-25/blob/main/funct_anal-example.ipynb)
+[Functional Analysis Example](https://nbviewer.org/github/amoyag/HAB_24-25/blob/main/funct_anal-example.ipynb)
 
