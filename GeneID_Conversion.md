@@ -1,7 +1,4 @@
----
-layout: default
-title: Gene ID Conversion
----
+
 
 ### The Gene ID Conversion Problem
 
