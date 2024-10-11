@@ -1,2 +1,2 @@
-# amoyag.github.io
-Personal Website
+# Apuntes de clase
+## Herramientas y Agoritmos en Bioinformática 
