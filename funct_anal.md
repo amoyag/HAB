@@ -25,14 +25,14 @@ $$
 
 
 where:
-- \(a\) is the number of genes of interest in the category,
-- \(b\) is the number of genes of interest not in the category,
-- \(c\) is the number of background genes in the category,
-- \(d\) is the number of background genes not in the category.
+- $a$ is the number of genes of interest in the category,
+- $b$ is the number of genes of interest not in the category,
+- $c$ is the number of background genes in the category,
+- $d$ is the number of background genes not in the category.
 
 The p-value represents the probability of observing this distribution or one more extreme under the null hypothesis.
 
-The p-value obtained from the Fisher exact test can be very small, such as **p = 1.13 × 10⁻²⁹**, indicating significant overrepresentation. Since multiple categories are often tested, **p-value correction** (e.g., using the Benjamini-Hochberg method) is applied to control the false discovery rate.
+The p-value obtained from the Fisher exact test can be very small, such as **$p$ = 1.13 × 10⁻²⁹**, indicating significant overrepresentation. Since multiple categories are often tested, **p-value correction** (e.g., using the Benjamini-Hochberg method) is applied to control the false discovery rate.
 
 With the vast amount of genomic data being generated, functional analysis plays a key role in making sense of raw sequences, converting them into biologically meaningful insights. Several Python modules and tools are available to facilitate functional analysis, allowing researchers to automate and simplify their workflows. Below are some Python packages commonly used for this purpose, along with example scripts illustrating how to use each of them.
 
