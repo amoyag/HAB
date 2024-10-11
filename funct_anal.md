@@ -2,19 +2,37 @@
 
 Functional analysis in bioinformatics involves understanding the biological function of genes or proteins within an organism. After sequencing or identifying a gene of interest, researchers often need to determine its function and role in cellular processes. Functional analysis provides insights into gene ontology, biological pathways, molecular interactions, and overall cellular function.
 
-Functional analysis often involves **overrepresentation tests**, which are statistical methods used to determine if a set of genes is overrepresented in certain biological categories (e.g., Gene Ontology terms or pathways) compared to what would be expected by chance. These tests are crucial for identifying biological processes or pathways that are significantly associated with a gene list, such as those resulting from differential expression analysis. For example, given a list of genes that are significantly upregulated in cancer, an overrepresentation test could be used to identify which pathways are enriched for these genes, such as cell cycle regulation or apoptosis.
+One common approach for functional analysis is **overrepresentation analysis**, which aims to identify biological functions that are significantly enriched within a group of genes of interest compared to a reference group. This is done by comparing the annotated functions of the genes in the target group against those in the reference (or background) group.
 
-Overrepresentation analysis typically involves two sets: the **target gene list** (e.g., genes of interest) and the **background set** (e.g., all genes expressed in the sample). A statistical test, such as Fisher's exact test or the hypergeometric test, is used to determine whether certain terms are significantly enriched in the target list compared to the background.
+A typical statistical method used for this purpose is the **Fisher exact test**. For each functional category, the proportion of genes in the target group that are annotated with a given function is compared to the proportion of genes in the background group with the same annotation. If the target group has a significantly higher proportion of genes with that function, the function is considered overrepresented.
 
-This type of analysis is crucial for understanding disease mechanisms, identifying drug targets, or revealing the impact of mutations. With the vast amount of genomic data being generated, functional analysis plays a key role in making sense of raw sequences, converting them into biologically meaningful insights.
+The Fisher exact test can be represented using a contingency table. For example, consider a functional category (e.g., cell cycle regulation) and the number of genes in two lists: the target list (genes of interest) and the background list:
 
-Several Python modules and tools are available to facilitate functional analysis, allowing researchers to automate and simplify their workflows. Below are some Python packages commonly used for this purpose, along with example scripts illustrating how to use each of them.
+|                | In Category | Not in Category | Total |
+|----------------|-------------|-----------------|-------|
+| Genes of Interest | 3           | 9               | 12    |
+| Background       | 4           | 20              | 24    |
+| Total            | 7           | 29              | 36    |
 
-Functional analysis in bioinformatics involves understanding the biological function of genes or proteins within an organism. After sequencing or identifying a gene of interest, researchers often need to determine its function and role in cellular processes. Functional analysis provides insights into gene ontology, biological pathways, molecular interactions, and overall cellular function.
+Using the Fisher exact test, we calculate the p-value to determine if the proportion of genes of interest in the category is significantly higher than expected by chance. The null hypothesis is that the representation of the genes of interest in a functional category is equal to the representation of the background in that category.
 
-This type of analysis is crucial for understanding disease mechanisms, identifying drug targets, or revealing the impact of mutations. With the vast amount of genomic data being generated, functional analysis plays a key role in making sense of raw sequences, converting them into biologically meaningful insights.
+The Fisher exact test formula for calculating the p-value is:
 
-Several Python modules and tools are available to facilitate functional analysis, allowing researchers to automate and simplify their workflows. Below are some Python packages commonly used for this purpose, along with example scripts illustrating how to use each of them.
+\[
+p = \frac{ \binom{a+c}{a} \binom{b+d}{b} }{ \binom{a+b+c+d}{a+b} }
+\]
+
+where:
+- \(a\) is the number of genes of interest in the category,
+- \(b\) is the number of genes of interest not in the category,
+- \(c\) is the number of background genes in the category,
+- \(d\) is the number of background genes not in the category.
+
+The p-value represents the probability of observing this distribution or one more extreme under the null hypothesis.
+
+The p-value obtained from the Fisher exact test can be very small, such as **p = 1.13 × 10⁻²⁹**, indicating significant overrepresentation. Since multiple categories are often tested, **p-value correction** (e.g., using the Benjamini-Hochberg method) is applied to control the false discovery rate.
+
+With the vast amount of genomic data being generated, functional analysis plays a key role in making sense of raw sequences, converting them into biologically meaningful insights. Several Python modules and tools are available to facilitate functional analysis, allowing researchers to automate and simplify their workflows. Below are some Python packages commonly used for this purpose, along with example scripts illustrating how to use each of them.
 
 ### 1. **Biopython**
 
@@ -99,7 +117,7 @@ annotations = get_david_annotations(gene_list, 'your_email@example.com')
 print(annotations)
 ```
 
-### 5. **STRINGdb **
+### 5. **STRINGdb**
 
 `STRINGdb` is a Python module that interacts with the STRING database, which is a resource for exploring known and predicted protein-protein interactions. It allows users to retrieve interaction data and perform enrichment analysis for a set of proteins.
 
@@ -127,11 +145,3 @@ interactions = get_string_interactions(protein_list)
 for interaction in interactions:
     print(f"Protein 1: {interaction['preferredName_A']}, Protein 2: {interaction['preferredName_B']}, Score: {interaction['score']}")
 ```
-
-### Summary
-
-Functional analysis in bioinformatics provides the tools and methodologies to explore gene and protein functions, revealing insights into their biological roles. The Python libraries mentioned here (
-Biopython, GOATOOLS, gseapy, and DAVID API Wrapper) offer a variety of approaches for functional analysis, each with its own features suited for different research needs. Using these tools, researchers can uncover the functions of genes, identify their involvement in specific pathways, and better understand the biological significance of genomic data.
-
-
-
