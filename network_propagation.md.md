@@ -10,13 +10,13 @@ Network propagation algorithms are essential tools for exploring complex network
 - **DIAMOnD (Disease Module Detection)**:
    DIAMOnD is designed to identify disease modules within a protein-protein interaction network. It iteratively adds nodes (genes) to a set of known disease genes based on their network proximity, aiming to build a coherent module where the added nodes are likely involved in the same biological process as the initial set. DIAMOnD excels at prioritizing disease-associated genes by focusing on topological proximity, but its effectiveness can decline when large numbers of candidate genes are considered.
 
-2. **GUILD (Genes Underlying Inheritance Linked Disorders)**:
+-  **GUILD (Genes Underlying Inheritance Linked Disorders)**:
    GUILD is a framework that integrates various prioritization methods to rank genes based on their relevance to certain diseases. It implements multiple network propagation techniques like **NetScore**, **NetZcore**, **NetShort**, **fFlow**, and **NetRank**. For example, **NetScore** relies on message passing, where nodes transmit information to their neighbors, and the scores of nodes are updated iteratively. **NetZcore**, on the other hand, normalizes node scores using random networks, reducing the bias towards highly connected nodes. This versatility allows GUILD to be applied across different types of networks, making it suitable for a wide range of applications, such as drug target discovery and gene prioritization.
 
-3. **Random Walk with Restart (RWR)**:
+-  **Random Walk with Restart (RWR)**:
    One of the most widely used propagation algorithms, RWR simulates a random walker that moves across the network, occasionally "restarting" at the original node. This ensures that the propagation remains influenced by the initial input data. RWR is highly effective for tasks like gene prioritization and protein function prediction because it balances local and global network information, maintaining proximity to the starting nodes.
 
-4. **Heat Diffusion (HD)**:
+-  **Heat Diffusion (HD)**:
    Heat Diffusion is another popular propagation method that models the spreading of heat (information) over the network. Unlike RWR, it operates in continuous time and diffuses signals according to a time parameter that controls the extent of spreading. HD is particularly effective for integrating multi-omics data, such as gene expression and protein interaction data, to identify biologically relevant network regions.
 
 
