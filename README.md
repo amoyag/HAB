@@ -10,6 +10,6 @@
 [Functional Analysis Examples](https://github.com/amoyag/HAB_24-25/blob/main/functional_analysis_examples.ipynb)
 
 
-[Network Propagation](https://amoyag.github.io/HAB_24-25/network_propagation)
+[Network Propagation](https://amoyag.github.io/HAB_24-25/network_propagation.md.md)
 
 
