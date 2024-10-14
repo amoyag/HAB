@@ -1,22 +1,23 @@
 
 ## Rúbrica para evaluación de tareas de análisis funcional
 
-1.	Funcionalidad del Script (40%)
+1.	Funcionalidad del Script (40%)	(30% ponderado)
 	-	El script cumple con los requisitos solicitados (análisis funcional de una lista de genes, exportación del archivo con los resultados, posibilidad de ordenar por FDR, configuración de categorías funcionales...)
 	
-2.	Eficiencia y Organización del Código (20%)
+2.	Eficiencia y Organización del Código (20%)	(15% ponderado)
 	- EL código es eficiente en cuanto a tiempos de ejecución, uso de bibliotecas adecuadas, y claridad en la lógica implementada.
 	-	El código está bien organizado y sigue buenas prácticas de programación (uso de funciones, modularización, etc.).
-3.	Flexibilidad y Configurabilidad (15%)
+3.	Flexibilidad y Configurabilidad (15%)	(11% ponderado)
 	-	El script es flexible y permite la configuración adecuada de parámetros, como el umbral de FDR o la categoría funcional a elegir.
-4.	Manejo de Errores y Validación (15%)
+4.	Manejo de Errores y Validación (15%)	(11% ponderado)
 	- 	El script maneja errores comunes (como entradas incorrectas o falta de conexión a bases de datos) de manera adecuada, con mensajes de error útiles para el usuario.
 	- 	El código incluye validaciones para las entradas del usuario (ver explicación).
-5.	Documentación y Comentarios (10%)
+5.	Documentación y Comentarios (10%)	(8% ponderado)
 	-	El código está bien documentado, incluyendo comentarios que expliquen las secciones clave del código.
 	-	Se ha proporcionado una descripción clara de cómo usar el script, ya sea dentro del código o como un archivo separado.
 
-
+### Ejercicio práctico
+El script deberá usarse pararesponder a una pregunta. La respuesta correcta es el 25% de la calificación.
 ### Validaciones para la entrada de usuario
 “Validaciones para la entrada del usuario”, se refiere a verificar si el script maneja adecuadamente las entradas que recibe del usuario para evitar errores o problemas de ejecución:
 - **Validación de tipo de datos:** el script verifica que el tipo de datos introducidos por el usuario es el correcto. Por ejemplo, si se espera un número (como el valor de FDR o un identificador de especie), el script debería asegurarse de que el usuario ingresa un número y no un texto.
