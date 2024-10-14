@@ -1,5 +1,7 @@
 
 # Herramientas y Algoritmos en Bioinformática 24-25
+[Rúbrica de tareas](https://amoyag.github.io/HAB_24-25/rubrica_tareas)
+
 ## Functional Analysis
 [Gene ID Conversion](https://amoyag.github.io/HAB_24-25/GeneID_Conversion)
 
