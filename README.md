@@ -17,8 +17,4 @@
 
 [Network Propagation genes check](https://amoyag.github.io/HAB/check_genes.py)
 
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 5494871b64e7a0b74bd4892a2ab8cd1e2e6a1655
