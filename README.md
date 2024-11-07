@@ -13,4 +13,9 @@
 
 ## Network propagation
 
-[Network Propagation](https://amoyag.github.io/HAB/net
+[Network Propagation](https://amoyag.github.io/HAB/network_propagation.md)
+
+[Network Propagation genes check](https://amoyag.github.io/HAB/check_genes.py)
+
+
+
