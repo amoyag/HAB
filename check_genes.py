@@ -51,8 +51,17 @@ file_path = ''
 analyzer = CategoryGeneAnalyzer(file_path)        
 
 # Validation and ratio calculation
-print("\nValidation and Ratio Check:")
+print("\nValidation and Ratio Check")
 # Example gene sets to validate
 test_sets = [
         ['PGK1', 'HK2', 'INVALID_GENE'],
         ['ENO1', 'PGK1', 'HK2']
+
+for gene_set in test_sets:
+  valid_genes, invalid_genes, ratio = analyzer.validate_and_get_ratio(gene_set)
+
+  print(f"\nInput genes: {len(gene_set)}")
+  print(f"Valid  genes: {len(valid_genes)}")
+  print(f"Invalid genes: {len(invalid_genes)}")
+  #print(f"Ratio of  genes: {ratio:.2f}")
+  print(f"Valid genes recovered: {ratio*100:.2f}%")        
