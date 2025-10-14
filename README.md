@@ -1,5 +1,5 @@
 
-# Herramientas y Algoritmos en Bioinformática 24-25
+# Herramientas y Algoritmos en Bioinformática
 [Rúbrica de tareas](https://amoyag.github.io/HAB/rubrica_tareas)
 
 ## Functional Analysis
