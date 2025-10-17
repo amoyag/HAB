@@ -17,4 +17,6 @@
 
 [Network Propagation genes check](https://amoyag.github.io/HAB/check_genes.py)
 
+## Proyecto
 
+[Rúbrica de proyecto](https://amoyag.github.io/HAB/proyecto)
