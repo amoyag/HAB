@@ -21,5 +21,5 @@
 ### [Tarea 2. Network propagation](https://github.com/amoyag/HAB_tarea-2)
 
 ## Proyecto
-
+### [Proyecto de Análisis Funcional y Propagación en Redes](https://github.com/amoyag/HAB_Proyecto)
 [Rúbrica de proyecto](https://amoyag.github.io/HAB/proyecto)
