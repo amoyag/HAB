@@ -1,6 +1,5 @@
 
 # Herramientas y Algoritmos en Bioinformática
-[Rúbrica de tareas](https://amoyag.github.io/HAB/rubrica_tareas)
 
 ## Functional Analysis
 [Gene ID Conversion](https://amoyag.github.io/HAB/GeneID_Conversion)
@@ -16,6 +15,10 @@
 [Network Propagation](https://amoyag.github.io/HAB/network_propagation)
 
 [Network Propagation genes check](https://amoyag.github.io/HAB/check_genes.py)
+
+## Tareas
+### [Tarea 1. Análisis funcional](https://github.com/amoyag/HAB_tarea-1)
+### [Tarea 2. Network propagation](https://github.com/amoyag/HAB_tarea-2)
 
 ## Proyecto
 
