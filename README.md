@@ -8,7 +8,6 @@
 [Functional Analysis](https://amoyag.github.io/HAB/functional_analysis)
 
 
-[Functional Analysis Examples](https://github.com/amoyag/HAB/blob/main/functional_analysis_examples.ipynb)
 
 ## Network propagation
 
